@@ -1,0 +1,13 @@
+name: 'Nexus IQ Scan'
+description: 'Scan repository for vulnerabilities fail on HIGH'
+inputs:
+  app-name:  # name of application / repo
+    description: 'The application to scan - name should correspond with repo name'
+    required: true
+    default: 'test-app'
+outputs:
+  scan-result: # JSON object representation of the scan result from Nexus IQ
+    description: 'Nexus IQ Scan results'
+runs:
+  using: 'node10'
+  main: 'index.js'
