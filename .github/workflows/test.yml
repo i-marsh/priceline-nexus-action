@@ -3,7 +3,6 @@ name: CI
 on: 
   push:
     branches: test/*
-    branches-ignore: master
   
 
 jobs:
