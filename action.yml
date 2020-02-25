@@ -1,6 +1,10 @@
 name: 'Nexus IQ Scan'
 description: 'Scan repository for vulnerabilities fail on HIGH'
 inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
   app-name:  # name of application / repo
     description: 'The application to scan - name should correspond with repo name'
     required: true
@@ -8,6 +12,9 @@ inputs:
 outputs:
   scan-result: # JSON object representation of the scan result from Nexus IQ
     description: 'Nexus IQ Scan results'
+  time: # id of output
+    description: 'The time we greeted you'
+
 runs:
-  using: 'node10'
-  main: 'index.js'
+  using: 'node12'
+  main: 'dist/index.js'
