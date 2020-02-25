@@ -1,4 +1,10 @@
 # priceline-nexus-action
+
+|||
+|-|-|
+|![Run Nexus Vulnerability Scan](https://github.com/i-marsh/priceline-nexus-action/workflows/Run%20Nexus%20Vulnerability%20Scan/badge.svg?branch=test%2Fsample-action)||
+
+
 collaboration on repo integration with Nexus IQ
 ### Requires on prem / self hosted action runner
 On repo creation install action that will call Nexus IQ APIs to get vulnerability assessment
